@@ -1,8 +1,7 @@
-//Niharika Mishra nm729
-public class Milestone2
+//Niharika Mishra
+public class Image
 {
 //Returns the number of red pixels in a picture
-// (1) from MS1
 public static int countRedPixels(Picture v){
 	int countRedPixels = 0;
 	for(int x=0; x<v.getWidth();x++){
@@ -17,7 +16,6 @@ public static int countRedPixels(Picture v){
 	return countRedPixels; 
 }
 //Switches all red and blue pixels (pure red, pure blue)
-// (2) from MS1
 public static void switchRedBlue(Picture v){
 	for(int x=0; x<v.getWidth();x++){
 		for(int y=0;y<v.getHeight();y++){
@@ -71,7 +69,7 @@ public static void flipVertical(Picture v) {
  
 //Flips over imaginary diagonal line (5) from MS1
 // upper right to lower left diagonal line
-// you may assume SQUARE images (height == width)
+// SQUARE images (height == width)
 // IF pixels exist ON the midline, leave them there without reflecting
 public static void flipDiagonal(Picture v) {
 	for(int x=0; x<v.getWidth();x++){
@@ -84,13 +82,4 @@ public static void flipDiagonal(Picture v) {
   		} 
   	}
 }
- public static void main(String[] agrs){
-	Picture image=new Picture("square.jpg");
-	//int x=countRedPixels(image);
-	//System.out.println(x);
-	//flipVertical(image);
-	//flipHorizontal(image);
-	//flipDiagonal(image);
-	image.show();
-	}
 }
